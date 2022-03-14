@@ -8,5 +8,6 @@
 
 protocol PushViewOutput {
     func viewDidLoad()
+    /// Обработка нажатия закрытия
     func closeButtonDidTap()
 }

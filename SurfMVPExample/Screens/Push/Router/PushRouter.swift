@@ -17,6 +17,7 @@ final class PushRouter: PushRouterInput {
 	// MARK: - PushRouterInput
 
     func closeModule() {
+        /// Используем ModuleTransitionable
         view?.pop(animated: true)
     }
 

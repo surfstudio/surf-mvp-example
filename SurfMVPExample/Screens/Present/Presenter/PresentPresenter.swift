@@ -6,7 +6,7 @@
 //  Copyright © 2022 Surf. All rights reserved.
 //
 
-final class PresentPresenter: PresentViewOutput, PresentModuleInput, MainModuleOutput {
+final class PresentPresenter: PresentViewOutput, PresentModuleInput {
 
     private enum Constants {
         static let hideLabelTitle = "Скрыть лейбл на предыдущем экране"
@@ -22,6 +22,8 @@ final class PresentPresenter: PresentViewOutput, PresentModuleInput, MainModuleO
     // MARK: - Private Properties
 
     private var isHiddenLabel: Bool
+
+    // MARK: - Initialization
 
     init(isHiddenLabel: Bool) {
         self.isHiddenLabel = isHiddenLabel
@@ -39,6 +41,8 @@ final class PresentPresenter: PresentViewOutput, PresentModuleInput, MainModuleO
     func changeButtonDidTap() {
         isHiddenLabel.toggle()
         editButtonTitle()
+        /// При нажатии передаем Делегату, что изменилось состояние
+        /// В нашем случае делегатом является MainPresenter
         output?.changeLabelState()
     }
 

@@ -7,7 +7,7 @@
 
 struct MainPresenterModel {
     let title = "Surf MVP Example"
-    let pushButtonTitle = "Push View Controller"
-    let presentButtonTitle = "Present View Controller"
+    let pushButtonTitle = "Push Module"
+    let presentButtonTitle = "Present Module"
     let titleLabel = "Surf"
 }

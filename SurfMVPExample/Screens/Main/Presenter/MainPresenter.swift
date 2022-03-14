@@ -6,7 +6,8 @@
 //  Copyright © 2022 Surf. All rights reserved.
 //
 
-final class MainPresenter: MainViewOutput, MainModuleInput, PresentModuleOutput {
+
+final class MainPresenter: MainViewOutput, MainModuleInput {
 
     // MARK: - Properties
 
@@ -39,7 +40,13 @@ final class MainPresenter: MainViewOutput, MainModuleInput, PresentModuleOutput 
         view?.setupLabelState(state: state)
     }
 
-    // MARK: - PresentModuleOutput
+}
+
+// MARK: - PresentModuleOutput
+
+/// Тут мы подписываем наш класс на протокол PresentModuleOutput
+/// Чтобы он выполнял функцию делегата для PresentModule
+extension MainPresenter: PresentModuleOutput {
 
     func changeLabelState() {
         isHiddenLabel.toggle()

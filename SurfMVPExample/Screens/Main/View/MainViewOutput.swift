@@ -8,6 +8,8 @@
 
 protocol MainViewOutput {
     func viewDidLoad()
+    /// Обрабатываем нажатие кнопки push
     func pushButtonDidTap()
+    /// Обрабатываем нажатие кнопки present
     func presentButtonDidTap()
 }
