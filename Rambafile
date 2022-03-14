@@ -1,0 +1,37 @@
+### Headers settings
+company: Surf
+
+### Xcode project settings
+project_name: SurfMVPExample
+xcodeproj_path: SurfMVPExample.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: SurfMVPExample
+
+# The file path for new modules
+project_file_path: SurfMVPExample/Screens
+
+# The Xcode group path to new modules
+project_group_path: SurfMVPExample/Screens
+
+### Tests generation settings section
+# The tests target name
+test_target: SurfMVPExampleTests
+
+# The file path for new tests
+test_file_path: SurfMVPExampleTests/Tests/Screens
+
+# The Xcode group path to new tests
+test_group_path: SurfMVPExampleTests/Tests/Screens
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Catalogs
+catalogs:
+- 'https://github.com/surfstudio/generamba-templates'
+
+### Templates
+templates:
+- {name: surf_mvp_module}

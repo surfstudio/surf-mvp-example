@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3k-bK-TNO">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="PlN-iW-H7B">
+            <objects>
+                <viewController id="h3k-bK-TNO" customClass="MainViewController" customModule="SurfMVPExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cA6-JB-jfU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lDQ-6g-sFz">
+                                <rect key="frame" x="16" y="283.5" width="343" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foC-rP-jnk">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="pushButtonDidTap:" destination="h3k-bK-TNO" eventType="touchUpInside" id="59p-hs-CJn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjF-MQ-vNF">
+                                        <rect key="frame" x="176.5" y="0.0" width="166.5" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="presentButtonDidTap:" destination="h3k-bK-TNO" eventType="touchUpInside" id="rar-QF-adE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HZl-DL-f9Q"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f56-AH-iQW">
+                                <rect key="frame" x="167" y="213" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YWU-9O-L7t"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lDQ-6g-sFz" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="16" id="76P-gJ-VD6"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="lDQ-6g-sFz" secondAttribute="trailing" constant="16" id="Ycu-wJ-RYo"/>
+                            <constraint firstItem="lDQ-6g-sFz" firstAttribute="centerY" secondItem="YWU-9O-L7t" secondAttribute="centerY" id="ZQ4-jp-Ggd"/>
+                            <constraint firstItem="lDQ-6g-sFz" firstAttribute="top" secondItem="f56-AH-iQW" secondAttribute="bottom" constant="50" id="gxv-SG-tVg"/>
+                            <constraint firstItem="f56-AH-iQW" firstAttribute="centerX" secondItem="YWU-9O-L7t" secondAttribute="centerX" id="l45-JB-fKL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="presentButton" destination="hjF-MQ-vNF" id="jMw-L2-OdU"/>
+                        <outlet property="pushButton" destination="foC-rP-jnk" id="JQV-Zd-0rD"/>
+                        <outlet property="titleLabel" destination="f56-AH-iQW" id="zoT-Ar-aTx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psv-Wb-mBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.60000000000002" y="-231.63418290854574"/>
+        </scene>
+    </scenes>
+</document>
