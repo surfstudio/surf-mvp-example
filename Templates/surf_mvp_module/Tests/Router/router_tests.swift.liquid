@@ -1,0 +1,63 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import XCTest
+@testable import {{ module_info.product_module_name  }}
+
+final class {{ module_info.name }}RouterTests: XCTestCase {
+
+	// MARK: - Properties
+
+    private var view: MockModuleTransitionable?
+    private var router: {{ module_info.name }}Router?
+
+    // MARK: - XCTestCase
+
+    override func setUp() {
+        super.setUp()
+        router = {{ module_info.name }}Router()
+        view = MockModuleTransitionable()
+        router?.view = view
+    }
+
+    override func tearDown() {
+        super.tearDown()
+        view = nil
+        router = nil
+    }
+
+    // MARK: - Main tests
+
+    // MARK: - Mocks
+
+    private final class MockModuleTransitionable: ModuleTransitionable {
+
+        func showModule(_ module: UIViewController) {
+        }
+
+        func dismissView(animated: Bool, completion: (() -> Void)?) {
+        }
+
+        func presentModule(_ module: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        }
+
+        func pop(animated: Bool) {
+        }
+
+        func popToRoot(animated: Bool) {
+        }
+
+        func push(module: UIViewController, animated: Bool) {
+        }
+
+        func push(module: UIViewController, animated: Bool, hideTabBar: Bool) {
+        }
+
+    }
+
+}
