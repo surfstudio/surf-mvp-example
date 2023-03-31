@@ -33,10 +33,6 @@ final class MainViewController: UIViewController, MainViewInput, ModuleTransitio
         configureAppearance(model: model)
     }
 
-    func setupLabelHidden(with state: Bool) {
-        titleLabel.isHidden = state
-    }
-
     func setupLabelState(state: Bool) {
         titleLabel.isHidden = state
     }
