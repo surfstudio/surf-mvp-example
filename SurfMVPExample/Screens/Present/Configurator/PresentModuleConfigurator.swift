@@ -12,7 +12,7 @@ final class PresentModuleConfigurator {
 
     // MARK: - Internal methods
 
-    func configure(output: PresentModuleOutput? = nil, isHiddenLabel: Bool) -> PresentViewController {
+    func configure(output: PresentModuleOutput? = nil, isHiddenLabel: Bool) -> UIViewController {
         guard let view = UIStoryboard(name: String(describing: PresentViewController.self),
                                       bundle: Bundle.main).instantiateInitialViewController() as? PresentViewController else {
             fatalError("Can't load PresentViewController from storyboard, check that controller is initial view controller")

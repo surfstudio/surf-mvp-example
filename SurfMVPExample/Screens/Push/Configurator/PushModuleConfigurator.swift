@@ -12,7 +12,7 @@ final class PushModuleConfigurator {
 
     // MARK: - Internal methods
 
-    func configure(output: PushModuleOutput? = nil) -> PushViewController {
+    func configure(output: PushModuleOutput? = nil) -> UIViewController {
         guard let view = UIStoryboard(name: String(describing: PushViewController.self),
                                       bundle: Bundle.main).instantiateInitialViewController() as? PushViewController else {
             fatalError("Can't load PushViewController from storyboard, check that controller is initial view controller")

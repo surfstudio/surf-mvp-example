@@ -6,5 +6,4 @@
 //  Copyright © 2022 Surf. All rights reserved.
 //
 
-protocol MainModuleOutput: AnyObject {
-}
+protocol MainModuleOutput: AnyObject { }

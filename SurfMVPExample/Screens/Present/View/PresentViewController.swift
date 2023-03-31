@@ -10,13 +10,13 @@ import UIKit
 
 final class PresentViewController: UIViewController, PresentViewInput, ModuleTransitionable {
 
-    // MARK: - Properties
-
-    var output: PresentViewOutput?
-
     // MARK: - Private Properties
 
     @IBOutlet private weak var changeLabelStateButton: UIButton!
+
+    // MARK: - Properties
+
+    var output: PresentViewOutput?
 
     // MARK: - UIViewController
 

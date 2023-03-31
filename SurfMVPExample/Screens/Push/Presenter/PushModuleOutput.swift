@@ -6,5 +6,4 @@
 //  Copyright © 2022 Surf. All rights reserved.
 //
 
-protocol PushModuleOutput: AnyObject {
-}
+protocol PushModuleOutput: AnyObject { }

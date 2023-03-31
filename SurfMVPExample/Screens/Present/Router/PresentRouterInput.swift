@@ -6,7 +6,4 @@
 //  Copyright © 2022 Surf. All rights reserved.
 //
 
-import Foundation
-
-protocol PresentRouterInput {
-}
+protocol PresentRouterInput { }
