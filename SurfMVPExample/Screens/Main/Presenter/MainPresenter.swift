@@ -33,13 +33,6 @@ final class MainPresenter: MainViewOutput, MainModuleInput {
         router?.showPresentModule(output: self, isHiddenLabel: isHiddenLabel)
     }
 
-    // MARK: - MainModuleInput
-
-    func editStateLabel(state: Bool) {
-        isHiddenLabel = state
-        view?.setupLabelState(state: state)
-    }
-
 }
 
 // MARK: - PresentModuleOutput

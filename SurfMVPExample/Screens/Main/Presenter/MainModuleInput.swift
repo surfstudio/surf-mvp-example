@@ -6,6 +6,4 @@
 //  Copyright © 2022 Surf. All rights reserved.
 //
 
-protocol MainModuleInput: AnyObject {
-    func editStateLabel(state: Bool)
-}
+protocol MainModuleInput: AnyObject { }
