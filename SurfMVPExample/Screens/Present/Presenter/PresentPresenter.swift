@@ -31,8 +31,6 @@ final class PresentPresenter: PresentViewOutput, PresentModuleInput {
 
     // MARK: - PresentViewOutput
 
-    // MARK: - PresentModuleInput
-
     func viewDidLoad() {
         view?.setupInitialState()
         editButtonTitle()
